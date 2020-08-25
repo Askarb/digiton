@@ -401,7 +401,7 @@ body {
 .send-cover {
     background-color: #F0EFF2;
     border-radius: 12px;
-    padding: 80px 100px;
+    padding: 60px 100px;
 }
 
 .send-cover h4 {
@@ -457,4 +457,334 @@ body {
     font-size: 48px;
     font-weight: 600;
     margin-top: 30px;
+}
+
+.get-consultation {
+    display: block;
+    outline: 0;
+    cursor: pointer;
+    margin: 50px auto 0;
+    padding: 13px 89px;
+    border: 1px solid #A68CB1;
+    background-color: transparent;
+    border-radius: 30px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: unset;
+        min-width: unset;
+        margin: 0 20px;
+    }
+
+    .mobile-menu {
+        display: block;
+        transform: translateX(150%);
+        width: 90%;
+        right: 0;
+        height: 100vh;
+        position: fixed;
+        z-index: 5;
+        background-color: #14111c;
+        padding: 20px 20px 0 50px;
+        transition: 0.5s;
+    }
+
+    .mobile-menu-link {
+        display: block;
+        color: #ffffff;
+        margin: 20px;
+    }
+
+    .close-burger {
+        width: 26px;
+        height: 26px;
+        background-color: transparent;
+        border: none;
+        top: 30px;
+        right: 20px;
+        outline: 0;
+        position: fixed;
+        background-image: url("img/close.svg");
+    }
+
+    .burger-menu {
+        display: block;
+        background-image: url("img/burger-menu.svg");
+        outline: 0;
+        width: 26px;
+        height: 26px;
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+    }
+    
+    .get-consultation {
+        margin: 30px 0 0;
+        padding: 13px 0;
+        width: 100%;
+    }
+
+    .top-cover {
+        height: unset;
+    }
+
+    .top-center h1 {
+        font-size: 32px;
+    }
+
+    .top-center .add-text {
+        font-size: 16px;
+    }
+
+    .top-center {
+        margin: 130px 16px;
+    }
+
+    .figures-cover {
+        height: 570px;
+    }
+
+    .figures-cover .figure-cover {
+        display: flex;
+        align-items: center;
+    }
+
+    .figure-cover {
+        padding: 34px 0 37px;
+    }
+
+    .figure-cover .figure-text {
+        flex-direction: column-reverse;
+    }
+
+    .bottom-text {
+        margin-top: 60px;
+    }
+
+    .main-bottom {
+        padding: 25px 0;
+    }
+
+    .companies {
+        margin: 30px 0;
+    }
+
+    .companies-cover {
+        overflow: auto;
+    }
+
+    .companies img {
+        height: 20px;
+        width: unset;
+    }
+
+    .companies img:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .send-cover h4 {
+        font-size: 24px;
+    }
+
+    .inputs {
+        margin-top: 10px;
+    }
+
+    .inputs input {
+        margin-top: 10px;
+    }
+
+    .inputs .add-data {
+        margin-top: 10px;
+    }
+
+    .send-cover {
+        padding: 24px 16px;
+    }
+
+    .figure-right {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .arrows {
+        display: none;
+    }
+    
+    .figure-left {
+        width: 100%;
+    }
+
+    .figure-left h2 {
+        font-size: 24px;
+    }
+
+    .top-numbers {
+        right: unset;
+        left: 20px;
+        bottom: 25px;
+    }
+
+    .top-numbers .top-text {
+        font-size: 14px;
+    }
+
+    .top-numbers .top-number {
+        font-size: 48px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .solutions-cover {
+        flex-direction: column;
+    }
+
+    .solution-cover:not(:first-child) {
+        margin-left: unset;
+    }
+
+    .about-top {
+        flex-direction: column;
+    }
+
+    .about-bottom {
+        flex-direction: column;
+    }
+
+    .team {
+        width: unset;
+        padding: 25px 20px;
+    }
+
+    .about-us-cover {
+        padding: 25px 0;
+    }
+
+    .about-bottom {
+        margin-top: 20px;
+    }
+
+    .team-text {
+        font-size: 18px;
+    }
+
+    .developer-team {
+        margin-top: 20px;
+        width: unset;
+        white-space: normal;
+    }
+
+    .inputs .number {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .inputs .name {
+        width: 100%;
+    }
+
+    .inputs .add-data {
+        width: 100%;
+    }
+
+    .we-email {
+        font-size: 36px;
+    }
+
+    .we-phone {
+        font-size: 36px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .how-we-work-cover h3 {
+        font-size: 24px;
+    }
+
+    .how-we-work-additional {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .how-we-work-cover {
+        padding: 24px 0;
+    }
+
+    .how-we-work-cover .how-we-work-steps {
+        flex-direction: column;
+    }
+
+    .work-step {
+        max-width: 100%;
+        justify-content: unset;
+    }
+
+    .work-step:first-child {
+        margin-top: 0;
+    }
+
+    .work-step .step-number {
+        font-size: 36px;
+    }
+
+    .main-bottom h3 {
+        font-size: 24px;
+    }
+
+    .work-step .step-text {
+        font-size: 14px;
+    }
+
+    .big-me {
+        width: 140px;
+    }
+
+    .offer-solutions-cover h3 {
+        margin: 0 0 16px;
+        font-size: 24px;
+    }
+
+    .solution-header {
+        padding: 16px;
+    }
+
+    .offer-solutions-cover {
+        padding: 24px 0;
+    }
+
+    .solution-cover:not(:first-child) {
+        margin-top: 25px;
+    }
+
+    .solution-body p {
+        margin: 0 0 20px;
+    }
+
+    .solution-body {
+        padding: 16px;
+    }
+
+    .solution-cover button {
+        margin: 0 16px;
+    }
+
+    .big-me-text {
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 20px;
+    }
 }

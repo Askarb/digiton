@@ -27,3 +27,11 @@ function change() {
     currentPage = currentPage == 1 ? 2 : 1;
     document.getElementById('companies').style.transform = `translate(${pages[currentPage]})`;
 }
+
+function showBurger() {
+    document.getElementById('burger-menu').style.transform = 'translate(0%)';
+}
+
+function closeBurger() {
+    document.getElementById('burger-menu').style.transform = 'translate(150%)';
+}
