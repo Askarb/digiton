@@ -2,7 +2,7 @@
 <head>
     <title>Digiton - Выводим бизнес в онлайн</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
     <div id="burger-menu" class="mobile-menu">
@@ -14,7 +14,7 @@
     </div>
     <div class="header">
         <div class="container flex-header">
-            <img class="logo" src="img/logo.png" />
+            <img class="logo" src="/static/img/logo.png" />
             <button class="burger-menu" onclick="showBurger()"></div>
             <div class="header-right">
                 <div class="header-menu">
@@ -136,7 +136,7 @@
     <div class="about-us-cover">
         <div class="container">
             <div class="about-top">
-                <img class="big-me" src="img/us.png" />
+                <img class="big-me" src="/static/img/us.png" />
                 <div class="big-me-text">Опытная команда с портфолио более 10 проектов различной сложности. Средний опыт работы наших сотрудников в сфере 8 лет.</div>
             </div>
             <div class="about-bottom">
@@ -188,30 +188,34 @@
             <div class="bottom-flex">
                 <h3>Члены нашей команды учавствовали в разработке:</h3>
                 <div class="arrows">
-                    <img src="img/left-arrow.png" onclick="change()" />
-                    <img src="img/right-arrow.png" onclick="change()" />
+                    <img src="/static/img/left-arrow.png" onclick="change()" />
+                    <img src="/static/img/right-arrow.png" onclick="change()" />
                 </div>
             </div>
             <div class="companies-cover">
                 <div class="companies" id="companies">
-                    <img class="qoove" src="img/qoove.png" />
-                    <img src="img/goodplaces.png" />
-                    <img src="img/voxball.png" />
-                    <img src="img/santufei.png" />
-                    <img class="qoove" src="img/qoove.png" />
-                    <img src="img/goodplaces.png" />
-                    <img src="img/voxball.png" />
-                    <img src="img/santufei.png" />
+                    <img class="qoove" src="/static/img/qoove.png" />
+                    <img src="/static/img/goodplaces.png" />
+                    <img src="/static/img/voxball.png" />
+                    <img src="/static/img/santufei.png" />
+                    <img class="qoove" src="/static/img/qoove.png" />
+                    <img src="/static/img/goodplaces.png" />
+                    <img src="/static/img/voxball.png" />
+                    <img src="/static/img/santufei.png" />
                 </div>
             </div>
             <div class="send-cover">
                 <h4>Сколько будет стоить выход вашего бизнеса в интернет?</h4>
                 <div class="inputs">
-                    <input class="name" type="text" placeholder="Имя" />
-                    <input class="number" type="text" placeholder="Телефон" /><br />
-                    <input class="add-data" type="text" placeholder="Расскажите чем вы занимаетесь" />
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ form.name }}
+                        {{ form.phone }}
+                        {{ form.info }}
+
+                        <button class="get-consultation">Получить консультацию</button>
+                    </form>
                 </div>
-                <button type="button" class="get-consultation">Получить консультацию</button>
             </div>
             <div class="bottom-text">
                 <div class="we-are-in-here">Мы находимся в г. Алматы</div>
@@ -221,4 +225,4 @@
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="/static/script.js"></script>
